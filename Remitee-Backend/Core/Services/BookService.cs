@@ -52,6 +52,11 @@ namespace Remitee_Backend.Core.Services
 
         public async Task DeleteAsync(Guid id)
         {
+            var book = await _bookRepository.GetAsync(id);
+            if (book == null)
+            {
+                throw new KeyNotFoundException($"Book with ID {id} not found.");
+            }
             await _bookRepository.DeleteAsync(id);
             await _unitOfWork.SaveChangesAsync();
         }

@@ -10,11 +10,11 @@ namespace Remitee_Backend.Core.Controllers
     [ApiController]
     [Route("api/books")]
     [Produces("application/json")]
-    public sealed class BooksController : ControllerBase
+    public sealed class BookController : ControllerBase
     {
         private readonly IBookService _bookService;
 
-        public BooksController(IBookService bookService)
+        public BookController(IBookService bookService)
         {
             _bookService = Guard.Against.Null(bookService, nameof(bookService));
         }

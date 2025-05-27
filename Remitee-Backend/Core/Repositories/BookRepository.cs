@@ -52,11 +52,11 @@ namespace Remitee_Backend.Core.Repositories
             return book.Entity;
         }
 
-        public async Task DeleteAsync(Guid guid)
+        public async Task DeleteAsync(Guid id)
         {
             // Could be a logical delete.
             await _dataContext.Books
-                .Where(b => b.Id == guid)
+                .Where(b => b.Id == id)
                 .ExecuteDeleteAsync();
         }
     }
