@@ -1,6 +1,5 @@
 ﻿using Ardalis.GuardClauses;
 using Microsoft.AspNetCore.Mvc;
-using Remitee_Backend.Core.DataTransferObjects;
 using Remitee_Backend.Core.DataTransferObjects.Books;
 using Remitee_Backend.Core.Services.Interfaces;
 using Remitee_Backend.Core.Support.Paginator;

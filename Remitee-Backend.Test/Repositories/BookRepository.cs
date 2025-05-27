@@ -4,7 +4,6 @@ using Remitee_Backend.Core.Entities;
 using Remitee_Backend.Core.Repositories;
 using Remitee_Backend.Core.Support.Paginator;
 using Remitee_Backend.Data;
-using Xunit;
 
 namespace Remitee_Backend.Core.Tests.Repositories
 {

@@ -1,7 +1,7 @@
 ﻿using Remitee_Backend.Core.Entities;
 using Remitee_Backend.Core.Models;
 
-namespace Remitee_Backend.Core.DataTransferObjects
+namespace Remitee_Backend.Core.DataTransferObjects.Books
 {
     public class BookDTO : DataTransferObject
     {
