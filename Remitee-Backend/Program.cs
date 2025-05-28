@@ -22,6 +22,8 @@ services.AddRepositoryConfiguration();
 
 services.AddServiceConfiguration();
 
+services.AddWebSecurityConfiguration();
+
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen(c =>
 {
@@ -33,16 +35,26 @@ services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
+var environment = app.Environment;
 
 app.UseMiddleware<ExceptionHandler>();
 
-if (app.Environment.IsDevelopment())
+if (environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c => {
         c.RoutePrefix = "api/docs";
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Remitee Backend");
     });
+    app.UseCors("_AllowOriginDev");
+}
+else if (environment.IsProduction())
+{
+    app.UseCors("_AllowOrigin");
+}
+else
+{
+    throw new Exception("Invalid environment");
 }
 
 app.UseHttpsRedirection();

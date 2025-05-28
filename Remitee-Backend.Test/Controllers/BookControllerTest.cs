@@ -6,7 +6,7 @@ using Remitee_Backend.Core.DataTransferObjects.Books;
 using Remitee_Backend.Core.Services.Interfaces;
 using Remitee_Backend.Core.Support.Paginator;
 
-namespace Remitee_Backend.Core.Tests.Controllers
+namespace Remitee_Backend.Tests.Controllers
 {
     public class BooksControllerTests
     {

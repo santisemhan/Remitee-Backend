@@ -6,7 +6,6 @@ namespace Remitee_Backend.Middleware.GlobalException
 {
     public sealed class ExceptionHandler
     {
-
         private readonly RequestDelegate nextMiddleware;
 
         public ExceptionHandler(RequestDelegate nextMiddleware)

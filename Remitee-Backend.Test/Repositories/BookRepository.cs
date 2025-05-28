@@ -5,7 +5,7 @@ using Remitee_Backend.Core.Repositories;
 using Remitee_Backend.Core.Support.Paginator;
 using Remitee_Backend.Data;
 
-namespace Remitee_Backend.Core.Tests.Repositories
+namespace Remitee_Backend.Test.Repositories
 {
     public class BookRepositoryTests
     {
