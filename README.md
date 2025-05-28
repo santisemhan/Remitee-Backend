@@ -70,7 +70,13 @@ Execute it using SQL Server Management Studio (SSMS) or your preferred SQL clien
 
 ### 🧪 Test the API
 
-Run the API:
+Run the Unit Tests:
+
+```bash
+dotnet test
+```
+
+Or you can run the API:
 
 ```bash
 dotnet run
