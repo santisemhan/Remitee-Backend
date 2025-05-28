@@ -8,7 +8,8 @@
 </div>
 
 ## :dart: About ##
-The goal of this challenge is to assess your ability to build a small fullstack application. In this repository, you'll find the backend: a REST API built with .NET (C#), which exposes endpoints to display and insert data related to a real-world entity. This API is intended to be consumed by a frontend application developed with React JS, located in a separate repository.
+This repository contains the backend application for the Remitee technical challenge, built with .NET 8.
+
 
 ## :checkered_flag: Get Started ##
 
